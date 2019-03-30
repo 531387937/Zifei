@@ -1,0 +1,605 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: UIItemAtlas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: e93219f1879df3d40b5ad43b03c2b494, type: 2}
+  mSprites:
+  - name: 36jiBook
+    x: 198
+    y: 291
+    width: 80
+    height: 110
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 20
+    paddingRight: 20
+    paddingTop: 5
+    paddingBottom: 5
+  - name: 36jiBookShader
+    x: 111
+    y: 194
+    width: 80
+    height: 110
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 20
+    paddingRight: 20
+    paddingTop: 5
+    paddingBottom: 5
+  - name: AdultMask
+    x: 0
+    y: 422
+    width: 110
+    height: 90
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 5
+    paddingRight: 5
+    paddingTop: 15
+    paddingBottom: 15
+  - name: AdultMaskShader
+    x: 0
+    y: 331
+    width: 110
+    height: 90
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 5
+    paddingRight: 5
+    paddingTop: 15
+    paddingBottom: 15
+  - name: BlueKey
+    x: 673
+    y: 452
+    width: 100
+    height: 60
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 10
+    paddingRight: 10
+    paddingTop: 25
+    paddingBottom: 35
+  - name: CountryHeadRoomKey
+    x: 461
+    y: 25
+    width: 100
+    height: 60
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 10
+    paddingRight: 10
+    paddingTop: 25
+    paddingBottom: 35
+  - name: Diary
+    x: 111
+    y: 83
+    width: 80
+    height: 110
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 20
+    paddingRight: 20
+    paddingTop: 5
+    paddingBottom: 5
+  - name: DiaryShader
+    x: 198
+    y: 402
+    width: 80
+    height: 110
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 20
+    paddingRight: 20
+    paddingTop: 5
+    paddingBottom: 5
+  - name: DryadHat
+    x: 461
+    y: 330
+    width: 110
+    height: 60
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 5
+    paddingRight: 5
+    paddingTop: 30
+    paddingBottom: 30
+  - name: DyradHatShader
+    x: 461
+    y: 391
+    width: 110
+    height: 60
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 5
+    paddingRight: 5
+    paddingTop: 30
+    paddingBottom: 30
+  - name: FrogHat
+    x: 461
+    y: 452
+    width: 110
+    height: 60
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 5
+    paddingRight: 5
+    paddingTop: 30
+    paddingBottom: 30
+  - name: FrogHatShader
+    x: 461
+    y: 269
+    width: 110
+    height: 60
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 5
+    paddingRight: 5
+    paddingTop: 30
+    paddingBottom: 30
+  - name: GetItemBlue
+    x: 198
+    y: 38
+    width: 60
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 30
+    paddingRight: 30
+    paddingTop: 15
+    paddingBottom: 25
+  - name: GetItemGreen
+    x: 370
+    y: 175
+    width: 60
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 30
+    paddingRight: 30
+    paddingTop: 15
+    paddingBottom: 25
+  - name: GetItemRed
+    x: 370
+    y: 256
+    width: 60
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 30
+    paddingRight: 30
+    paddingTop: 15
+    paddingBottom: 25
+  - name: GetItemShader
+    x: 111
+    y: 2
+    width: 60
+    height: 80
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 30
+    paddingRight: 30
+    paddingTop: 15
+    paddingBottom: 25
+  - name: GreenKey
+    x: 774
+    y: 452
+    width: 100
+    height: 60
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 10
+    paddingRight: 10
+    paddingTop: 25
+    paddingBottom: 35
+  - name: KeyShader
+    x: 875
+    y: 452
+    width: 100
+    height: 60
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 1
+    borderBottom: 0
+    paddingLeft: 10
+    paddingRight: 10
+    paddingTop: 25
+    paddingBottom: 35
+  - name: KeyShader (Copy)
+    x: 461
+    y: 86
+    width: 100
+    height: 60
+    borderLeft: 1
+    borderRight: 0
+    borderTop: 1
+    borderBottom: 0
+    paddingLeft: 10
+    paddingRight: 10
+    paddingTop: 25
+    paddingBottom: 35
+  - name: KeyShader (Copy) (Copy)
+    x: 461
+    y: 147
+    width: 100
+    height: 60
+    borderLeft: 2
+    borderRight: 0
+    borderTop: 1
+    borderBottom: 0
+    paddingLeft: 10
+    paddingRight: 10
+    paddingTop: 25
+    paddingBottom: 35
+  - name: KeyShader (Copy) (Copy) (Copy)
+    x: 461
+    y: 208
+    width: 100
+    height: 60
+    borderLeft: 2
+    borderRight: 0
+    borderTop: 1
+    borderBottom: 0
+    paddingLeft: 10
+    paddingRight: 10
+    paddingTop: 25
+    paddingBottom: 35
+  - name: Letter
+    x: 0
+    y: 129
+    width: 90
+    height: 100
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 15
+    paddingRight: 15
+    paddingTop: 10
+    paddingBottom: 10
+  - name: LetterShader
+    x: 0
+    y: 230
+    width: 90
+    height: 100
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 15
+    paddingRight: 15
+    paddingTop: 10
+    paddingBottom: 10
+  - name: Meat
+    x: 279
+    y: 331
+    width: 90
+    height: 90
+    borderLeft: 2
+    borderRight: 1
+    borderTop: 1
+    borderBottom: 2
+    paddingLeft: 15
+    paddingRight: 15
+    paddingTop: 15
+    paddingBottom: 15
+  - name: Meat (Copy)
+    x: 0
+    y: 25
+    width: 86
+    height: 103
+    borderLeft: 2
+    borderRight: 1
+    borderTop: 1
+    borderBottom: 2
+    paddingLeft: 24
+    paddingRight: 27
+    paddingTop: 21
+    paddingBottom: 21
+  - name: Meat (Copy) (Copy)
+    x: 111
+    y: 409
+    width: 86
+    height: 103
+    borderLeft: 2
+    borderRight: 1
+    borderTop: 1
+    borderBottom: 2
+    paddingLeft: 24
+    paddingRight: 27
+    paddingTop: 21
+    paddingBottom: 21
+  - name: Meat (Copy) (Copy) (Copy)
+    x: 111
+    y: 305
+    width: 86
+    height: 103
+    borderLeft: 2
+    borderRight: 1
+    borderTop: 1
+    borderBottom: 2
+    paddingLeft: 24
+    paddingRight: 27
+    paddingTop: 21
+    paddingBottom: 21
+  - name: MeatShader
+    x: 279
+    y: 422
+    width: 90
+    height: 90
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 15
+    paddingRight: 15
+    paddingTop: 15
+    paddingBottom: 15
+  - name: MechanicalGlasses
+    x: 683
+    y: 426
+    width: 110
+    height: 25
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 5
+    paddingRight: 5
+    paddingTop: 45
+    paddingBottom: 50
+  - name: MechanicalGlassesShader
+    x: 572
+    y: 426
+    width: 110
+    height: 25
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 5
+    paddingRight: 5
+    paddingTop: 45
+    paddingBottom: 50
+  - name: RedKey
+    x: 572
+    y: 452
+    width: 100
+    height: 60
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 10
+    paddingRight: 10
+    paddingTop: 25
+    paddingBottom: 35
+  - name: SeedBlue
+    x: 370
+    y: 7
+    width: 55
+    height: 55
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 30
+    paddingRight: 35
+    paddingTop: 35
+    paddingBottom: 30
+  - name: SeedGreen
+    x: 370
+    y: 63
+    width: 55
+    height: 55
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 30
+    paddingRight: 35
+    paddingTop: 35
+    paddingBottom: 30
+  - name: SeedRed
+    x: 370
+    y: 119
+    width: 55
+    height: 55
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 30
+    paddingRight: 35
+    paddingTop: 35
+    paddingBottom: 30
+  - name: SeedShader
+    x: 279
+    y: 2
+    width: 55
+    height: 55
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 30
+    paddingRight: 35
+    paddingTop: 35
+    paddingBottom: 30
+  - name: Spanner
+    x: 279
+    y: 240
+    width: 90
+    height: 90
+    borderLeft: 1
+    borderRight: 1
+    borderTop: 1
+    borderBottom: 0
+    paddingLeft: 15
+    paddingRight: 15
+    paddingTop: 15
+    paddingBottom: 15
+  - name: Spanner (Copy)
+    x: 370
+    y: 337
+    width: 85
+    height: 84
+    borderLeft: 1
+    borderRight: 1
+    borderTop: 1
+    borderBottom: 0
+    paddingLeft: 15
+    paddingRight: 15
+    paddingTop: 15
+    paddingBottom: 15
+  - name: SpannerShader
+    x: 279
+    y: 58
+    width: 90
+    height: 90
+    borderLeft: 0
+    borderRight: 1
+    borderTop: 1
+    borderBottom: 0
+    paddingLeft: 15
+    paddingRight: 15
+    paddingTop: 15
+    paddingBottom: 15
+  - name: SpannerShader (Copy)
+    x: 370
+    y: 422
+    width: 90
+    height: 90
+    borderLeft: 1
+    borderRight: 1
+    borderTop: 1
+    borderBottom: 0
+    paddingLeft: 15
+    paddingRight: 15
+    paddingTop: 15
+    paddingBottom: 15
+  - name: SpannerShader (Copy) (Copy)
+    x: 279
+    y: 149
+    width: 90
+    height: 90
+    borderLeft: 1
+    borderRight: 1
+    borderTop: 1
+    borderBottom: 0
+    paddingLeft: 15
+    paddingRight: 15
+    paddingTop: 15
+    paddingBottom: 15
+  - name: Wine
+    x: 198
+    y: 119
+    width: 65
+    height: 85
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 25
+    paddingRight: 30
+    paddingTop: 20
+    paddingBottom: 15
+  - name: WineShader
+    x: 198
+    y: 205
+    width: 65
+    height: 85
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 25
+    paddingRight: 30
+    paddingTop: 20
+    paddingBottom: 15
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+  mCoordinates: 0
+  sprites: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

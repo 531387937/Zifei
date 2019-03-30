@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<note>
+		<sellGoods> 
+			<goodsID>1</goodsID>
+			<spriteName>item_spanner</spriteName>
+			<goodsName>扳手</goodsName>
+			<goodsIntro>　　修理必备之物，有大用处。23131</goodsIntro>
+			<goodsNum>-1</goodsNum>
+			<goodsEquiped>0</goodsEquiped>
+			<goodsPrice>100</goodsPrice>
+		</sellGoods>
+		<sellGoods> 
+			<goodsID>2</goodsID>
+			<spriteName>item_adultMask</spriteName>
+			<goodsName>成人面具</goodsName>
+			<goodsIntro>　　戴上后有神奇的效能，可伪装为成人</goodsIntro>
+			<goodsNum>-1</goodsNum>
+			<goodsEquiped>0</goodsEquiped>
+			<goodsPrice>200</goodsPrice>
+		</sellGoods>
+		<sellGoods> 
+			<goodsID>3</goodsID>
+			<spriteName>item_beer</spriteName>
+			<goodsName>鸡尾酒</goodsName>
+			<goodsIntro>　　一种混合饮品，是由两种或两种以上的酒或饮料、果汁、汽水混合而成，有一定的营养价值和欣赏价值。</goodsIntro>
+			<goodsNum>-1</goodsNum>
+			<goodsEquiped>0</goodsEquiped>
+			<goodsPrice>500</goodsPrice>
+		</sellGoods>
+		<sellGoods> 
+			<goodsID>4</goodsID>
+			<spriteName>item_meat</spriteName>
+			<goodsName>肉</goodsName>
+			<goodsIntro>　　可以补充能量。非常好使哟</goodsIntro>
+			<goodsNum>-1</goodsNum>
+			<goodsEquiped>0</goodsEquiped>
+			<goodsPrice>50</goodsPrice>
+		</sellGoods>
+</note>

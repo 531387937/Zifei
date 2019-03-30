@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<note>
+		<countryDia> 
+			<chatBefore>孙女……呜呜……孙女……</chatBefore>
+			<chatTask>我孙女出海一直都没有回来，要是村里的灯塔能够亮起来，她就可以找到回家的路了。灯塔，灯塔的话，村里的老学究应该知道些。</chatTask>
+			<chatTaskGet>我相信你能够做到，快去快回！</chatTaskGet>
+			<chatAfter>点亮灯塔了吗？</chatAfter>
+		</countryDia>
+		<countryDia> 
+			<chatBefore>该死的铁匠！弄得我屋里都是灰！</chatBefore>
+			<chatTask>灯塔？我现在在忙别的事，如果你帮我解决灰尘问题我就会告诉你的。</chatTask>
+			<chatTaskGet>扫不完的灰尘，就像写不完的代码QAQ</chatTaskGet>
+			<chatAfter>非常感谢你！村里的水手一直在守护灯塔，可以找他问问。还有这个送给你！</chatAfter>
+			<chatAfter>好好看书。</chatAfter>
+		</countryDia>
+		<countryDia> 
+			<chatBefore>要不要买点东西呀。</chatBefore>
+			<chatTask>那个炉子坏了，你要修自己修。</chatTask>
+			<chatTaskGet>真不懂现在的小朋友。</chatTaskGet>
+			<chatAfter>要是有钱再买点东西呀。</chatAfter>
+		</countryDia>
+		<countryDia> 
+			<chatBefore>我不仅是守护着灯塔，就连村子的水库也是我看管！</chatBefore>
+			<chatTask>水管一直在漏水，可能是哪个水阀没关紧，不马上关上的话，村子就糟糕了。</chatTask>
+			<chatTaskGet>我现在离不开，水阀需要你来找，我还得看守灯塔。</chatTaskGet>
+			<chatAfter>水位已经降下去啦！点亮灯塔需要特殊的燃料，但是它们都在远离村庄非常危险的地方。你要是去寻找，别忘了带上放在你家的钥匙。祝你好运！</chatAfter>
+			<chatAfter>我年轻的时候也想做一个和你一样的勇者呐~</chatAfter>
+		</countryDia>
+		<countryDia> 
+			<chatBefore>再一杯...再一杯......</chatBefore>
+			<chatTask>酒！我要喝酒，你有没有酒啊...隔...</chatTask>
+			<chatTaskGet>嗝...</chatTaskGet>
+			<chatAfter>zzz</chatAfter>
+		</countryDia>
+		<countryDia> 
+			<chatBefore>这里可是酒吧，小孩儿进什么酒吧！</chatBefore>
+			<chatTask>你是未成年人，我不能让你随便进酒吧的。</chatTask>
+			<chatTaskGet>去去去...一边玩儿去。</chatTaskGet>
+			<chatAfter>去去去...</chatAfter>
+		</countryDia>
+		<countryDia> 
+			<chatBefore>需要买点什么吗？</chatBefore>
+			<chatTask>需要买点什么吗？</chatTask>
+			<chatTaskGet>需要买点什么吗？</chatTaskGet>
+			<chatAfter>需要买点什么吗？</chatAfter>
+		</countryDia>
+		
+		<countryThing>
+			<guoLu>损坏的锅炉。</guoLu>
+			<guoLu>需要扳手，把锅炉门闭紧。</guoLu>
+			<guoLu>正常运转的锅炉。</guoLu>
+		</countryThing>
+		<countryThing>
+			<guoLuZha>一堆锅炉渣</guoLuZha>
+		</countryThing>
+		<countryThing>
+			<tuQiu>肥沃的土地</tuQiu>
+		</countryThing>
+		<countryThing>
+			<bookStoreGuo>满是灰尘</bookStoreGuo>
+		</countryThing>
+		<countryThing>
+			<lightHouseBtn>没什么变化</lightHouseBtn>
+		</countryThing>
+		<countryThing>
+			<lightHouseLight>需要燃料</lightHouseLight>
+		</countryThing>
+		<countryThing>
+			<countryDoor1>紧闭的大门,好像很危险。</countryDoor1>
+		</countryThing>
+		<countryThing>
+			<countryDoor2>紧闭的大门,好像很危险。</countryDoor2>
+		</countryThing>
+		<countryThing>
+			<countryDoor3>紧闭的大门,好像很危险。</countryDoor3>
+		</countryThing>
+		<countryThing>
+			<barBox>一个箱子</barBox>
+		</countryThing>
+		<countryThing>
+			<barBarrel>木桶</barBarrel>
+		</countryThing>
+		<countryThing>
+			<barBarrel>有什么东西，摇摇看。</barBarrel> 
+		</countryThing>
+  <countryThing>
+
+  </countryThing>
+  <countryThing>
+
+  </countryThing>
+  <countryThing>
+
+  </countryThing>
+  <countryThing>
+
+  </countryThing>
+  <countryThing>
+
+  </countryThing>
+  <countryThing>
+    <tuQiu2>肥沃的土地</tuQiu2>
+
+  </countryThing>
+  <countryThing>
+    <tuQiu3>肥沃的土地</tuQiu3>
+
+  </countryThing>
+  <countryThing>
+    <hradDoor>村长家的门</hradDoor>
+
+  </countryThing>
+</note>

@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<note>
+		<achieve> 
+			<achieveID>1</achieveID>
+			<achieveName>【暗度陈仓】</achieveName>
+			<achieveIntro>　　找到村长家的密室。</achieveIntro>
+		</achieve>
+		<achieve> 
+			<achieveID>2</achieveID>    
+			<achieveName>【打草惊蛇】</achieveName>
+			<achieveIntro>　　身体触发隐藏的剑开关，被击中。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>3</achieveID>   
+			<achieveName>【调虎离山】</achieveName>
+			<achieveIntro>　　打破蜘蛛卵，将其引出牢笼</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>4</achieveID>   
+			<achieveName>【反间计】</achieveName>
+			<achieveIntro>　　穿上小怪套装。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>5</achieveID>   
+			<achieveName>【反客为主】</achieveName>
+			<achieveIntro>　　识破村长的阴谋，将其打败。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>6</achieveID>   
+			<achieveName>【釜底抽薪】</achieveName>
+			<achieveIntro>　　戴上机械眼镜。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>7</achieveID>   
+			<achieveName>【隔岸观火】</achieveName>
+			<achieveIntro>　　书店着火时主角在另一端。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>8</achieveID>   
+			<achieveName>【关门捉贼】</achieveName>
+			<achieveIntro>　　引诱蜘蛛，用铁栅栏将其扎死。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>9</achieveID>   
+			<achieveName>【浑水摸鱼】</achieveName>
+			<achieveIntro>　　穿小怪套装通关。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>10</achieveID>   
+			<achieveName>【借刀杀人】</achieveName>
+			<achieveIntro>　　跟铁匠借一把特制的刀。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>11</achieveID>   
+			<achieveName>【金蝉脱壳】</achieveName>
+			<achieveIntro>　　一指按住，另一指把物体拖出，帮人、虫子等挣脱枷锁。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>12</achieveID>   
+			<achieveName>【空城计】</achieveName>
+			<achieveIntro>　　背包中没有任何烤肉腿，顺利过完一关。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>13</achieveID>   
+			<achieveName>【连环计】</achieveName>
+			<achieveIntro>　　成功引诱三个触手。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>14</achieveID>   
+			<achieveName>【瞒天过海】</achieveName>
+			<achieveIntro>　　戴上胡子面具，混进了酒馆。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>15</achieveID>   
+			<achieveName>【美人计】</achieveName>
+			<achieveIntro>　　队伍里只有女性NPC。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>16</achieveID>   
+			<achieveName>【抛砖引玉】</achieveName>
+			<achieveIntro>　　在老虎机上赢得“777”大奖。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>17</achieveID>   
+			<achieveName>【上屋抽梯】</achieveName>
+			<achieveIntro>　　向上攀爬的过程中，梯子断了。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>18</achieveID>   
+			<achieveName>【顺手牵羊】</achieveName>
+			<achieveIntro>　　得到宝箱。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>19</achieveID>   
+			<achieveName>【树上开花】</achieveName>
+			<achieveIntro>　　戴上德鲁伊之冠。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>20</achieveID>   
+			<achieveName>【偷梁换柱】</achieveName>
+			<achieveIntro>　　给醉鬼一杯果汁。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>21</achieveID>   
+			<achieveName>【围魏救赵】</achieveName>
+			<achieveIntro>　　手指画圈围住怪物，救出NPC。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>22</achieveID>   
+			<achieveName>【无中生有】</achieveName>
+			<achieveIntro>　　通过摇晃的方式摔碎罐子，获得金币。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>23</achieveID>   
+			<achieveName>【笑里藏刀】</achieveName>
+			<achieveIntro>　　揭穿了村长的阴谋。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>24</achieveID>   
+			<achieveName>【以逸待劳】</achieveName>
+			<achieveIntro>　　经过可以放剑的机关，未将其触发。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>25</achieveID>   
+			<achieveName>【远交近攻】</achieveName>
+			<achieveIntro>　　手指从地图远处拖来道具。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>26</achieveID>   
+			<achieveName>【欲擒故纵】</achieveName>
+			<achieveIntro>　　猴子残血，没有将其打死过关。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>27</achieveID>   
+			<achieveName>【指桑骂槐】</achieveName>
+			<achieveIntro>　　手指点中桑树，对手机发声。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>28</achieveID>   
+			<achieveName>【趁火打劫】</achieveName>
+			<achieveIntro>　　打死猴子后，获得其掉落物品。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>29</achieveID>   
+			<achieveName>【假痴不癫】</achieveName>
+			<achieveIntro>　　醉鬼装疯卖傻，获得了免费的酒。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>30</achieveID>   
+			<achieveName>【假道伐虢】</achieveName>
+			<achieveIntro>　　借了铁匠铺的扳手，没有归还。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>31</achieveID>   
+			<achieveName>【借尸还魂】</achieveName>
+			<achieveIntro>　　主角死亡一次。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>32</achieveID>   
+			<achieveName>【苦肉计】</achieveName>
+			<achieveIntro>　　残血时猴子会被吸引过来，便于攻击。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>33</achieveID>   
+			<achieveName>【李代桃僵】</achieveName>
+			<achieveIntro>　　用稻草人代替主角去死。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>34</achieveID>   
+			<achieveName>【擒贼擒王】</achieveName>
+			<achieveIntro>　　打死大蜘蛛后，小蜘蛛也会死亡。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>35</achieveID>   
+			<achieveName>【声东击西】</achieveName>
+			<achieveIntro>　　点击（敲打）发出声响。</achieveIntro>
+		</achieve>
+		<achieve>   
+			<achieveID>36</achieveID>   
+			<achieveName>【走为上】</achieveName>
+			<achieveIntro>　　结束冒险直接返回村庄。</achieveIntro>
+		</achieve>
+</note>

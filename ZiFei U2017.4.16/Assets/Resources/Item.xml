@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<note>
+		<Item> 
+			<itemID>1</itemID>
+			<itemName>村长的信</itemName>
+			<itemIntro>　　我孙女不见啦！来村子西边找我！我在家等你！</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>0</itemPrice>
+		</Item>
+		<Item> 
+			<itemID>2</itemID>
+			<itemName>啤酒</itemName>
+			<itemIntro>　　下班之后来一杯，酷儿~~~</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>20</itemPrice>
+		</Item>
+		<Item> 
+			<itemID>3</itemID>
+			<itemName>烤腿肉</itemName>
+			<itemIntro>　　勇者旅行居家必备，+20体力。</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>10</itemPrice>
+		</Item>
+		<Item> 
+			<itemID>4</itemID>
+			<itemName>扳手</itemName>
+			<itemIntro>　　修理必备之物，有大用处。</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>15</itemPrice>
+		</Item>
+		<Item> 
+			<itemID>5</itemID>
+			<itemName>胡子面具</itemName>
+			<itemIntro>　　戴上后看起来老了很多。</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>50</itemPrice>
+		</Item>
+		<Item> 
+			<itemID>6</itemID>
+			<itemName>德鲁伊之冠</itemName>
+			<itemIntro>　　拥有自然之力，可以发射回旋镖。攻击范围扩大。</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>100</itemPrice>
+		</Item>
+		<Item> 
+			<itemID>7</itemID>
+			<itemName>狐狸头套</itemName>
+			<itemIntro>　　敏捷的发出攻击。</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>150</itemPrice>
+		</Item>
+		<Item> 
+			<itemID>8</itemID>
+			<itemName>机械眼镜</itemName>
+			<itemIntro>　　科技的力量，能发射出迅猛的激光。</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>200</itemPrice>
+		</Item>
+		<Item> 
+			<itemID>9</itemID>
+			<itemName>绿色钥匙</itemName>
+			<itemIntro>　　可以开启绿色的大门。</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>0</itemPrice>
+		</Item>
+		<Item> 
+			<itemID>10</itemID>
+			<itemName>蓝色钥匙</itemName>
+			<itemIntro>　　可以开启蓝色的大门。</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>0</itemPrice>
+		</Item>
+		<Item> 
+			<itemID>11</itemID>
+			<itemName>红色钥匙</itemName>
+			<itemIntro>　　可以开启红色的大门。</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>0</itemPrice>
+		</Item>
+		<Item> 
+			<itemID>12</itemID>
+			<itemName>金色钥匙</itemName>
+			<itemIntro>　　试试看村长家的门。</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>0</itemPrice>
+		</Item>
+		<Item> 
+			<itemID>13</itemID>
+			<itemName>绿色燃料</itemName>
+			<itemIntro>　　点亮灯塔的必备之物之一。</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>0</itemPrice>
+		</Item>
+		<Item> 
+			<itemID>14</itemID>
+			<itemName>蓝色燃料</itemName>
+			<itemIntro>　　点亮灯塔的必备之物之一。</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>0</itemPrice>
+		</Item>
+		<Item> 
+			<itemID>15</itemID>
+			<itemName>红色燃料</itemName>
+			<itemIntro>　　点亮灯塔的必备之物之一。</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>0</itemPrice>
+		</Item>
+		<Item> 
+			<itemID>16</itemID>
+			<itemName>三十六计</itemName>
+			<itemIntro>　　冒险者的荣誉都记载在这里。</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>0</itemPrice>
+		</Item>
+		<Item> 
+			<itemID>17</itemID>
+			<itemName>绿色种子</itemName>
+			<itemIntro>　　种下后可以长出点亮灯塔的燃料。</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>0</itemPrice>
+		</Item>
+		<Item> 
+			<itemID>18</itemID>
+			<itemName>蓝色种子</itemName>
+			<itemIntro>　　种下后可以长出点亮灯塔的燃料。</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>0</itemPrice>
+		</Item>
+		<Item> 
+			<itemID>19</itemID>
+			<itemName>红色种子</itemName>
+			<itemIntro>　　种下后可以长出点亮灯塔的燃料。</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>0</itemPrice>
+		</Item>
+		<Item> 
+      <itemID>20</itemID>
+			<itemName>日记</itemName>
+			<itemIntro>　　五月四日，这次的探险任务让我有种不安的感觉，关于这座荒废城堡的恐怖故事我从儿时就一直听说，也许在这里找不到金子，但是我敢保证蛛网和灰尘都是触手可得的。
+			　　五月五日 太可怕了，这里的地面也有腐蚀性了，我也许该早点离开这里，但是谁不对已经变成怪物蜘蛛的国王王冠感兴趣呢？我想明天再试试，现在只要睡觉的时候小心不要摔下去就行了</itemIntro>
+			<itemNum>-1</itemNum>
+			<itemEquiped>0</itemEquiped>
+			<itemPrice>0</itemPrice>
+		</Item>
+		
+</note>

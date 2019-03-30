@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<note>
+		<Task> 
+			<taskTitle>村长的来信</taskTitle>
+			<taskContent>我孙女不见啦！！来村子西边找我，我在家等你！</taskContent>
+		</Task>
+		<Task> 
+			<taskTitle>村长的委托</taskTitle>
+			<taskContent>询问老学究点亮灯塔的方法，找到村长的孙女。</taskContent>
+		</Task>
+		<Task> 
+			<taskTitle>老学究的求助</taskTitle>
+			<taskContent>楼上的炉渣总是落到我的屋子里，快让铁匠修修他的炉子吧。</taskContent>
+		</Task>
+		<Task> 
+			<taskTitle>损坏的锅炉</taskTitle>
+			<taskContent>买到工具，修理锅炉。</taskContent>
+		</Task>
+		<Task> 
+			<taskTitle>水手的请求</taskTitle>
+			<taskContent>找到隐藏的水阀，关上它。</taskContent>
+		</Task>
+		<Task> 
+			<taskTitle>酒鬼的请求</taskTitle>
+			<taskContent>给酒鬼喝酒，把她给灌醉。</taskContent>
+		</Task>
+		<Task> 
+			<taskTitle>混入酒馆</taskTitle>
+			<taskContent>进入到酒馆里，里面应该会有酒的。</taskContent>
+		</Task>
+</note>
