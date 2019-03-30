@@ -116,7 +116,6 @@ void OnCollisionEnter2D(Collision2D coll)                           //检测主�
                     if (m_invisibleColliderObj.name == m_colliderObj[i].name)   //只隐藏主角所站立的地面
                     {
                         m_colliderObj[i].SetActive(false);
-                        
                     }
                 }
                 else {

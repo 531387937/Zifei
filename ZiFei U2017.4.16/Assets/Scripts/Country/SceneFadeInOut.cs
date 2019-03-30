@@ -112,6 +112,10 @@ public class SceneFadeInOut : MonoBehaviour
 				Global.GetInstance().loadName = "LevelThree";
 				break;
 			}
+            //xy 19.3.30
+            int _saveIndex = GameManager.Instance.SaveCurrData();                                           //存档
+            _saveIndex++;
+            //
             SceneManager.LoadScene("LoadingScene");
 		}
 			

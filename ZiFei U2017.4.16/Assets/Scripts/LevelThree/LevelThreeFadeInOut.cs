@@ -89,6 +89,6 @@ public class LevelThreeFadeInOut : MonoBehaviour
         isChangeScene = false;
         Global.GetInstance().loadName = "SceneOne";
         SceneManager.LoadScene("LoadingScene");
-}
+    }
 
 }
