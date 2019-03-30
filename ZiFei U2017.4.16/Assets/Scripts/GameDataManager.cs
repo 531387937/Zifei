@@ -54,7 +54,7 @@ public class GameSaveData										//GameSaveData类 用于定义存档的数据
 
 
 		items = new int[20];
-		countryTaskState = new int[7];
+		countryTaskState = new int[8];
 		achieveState = new int[36];
 		seedState = new int[3];
 		keyState = new int[4];

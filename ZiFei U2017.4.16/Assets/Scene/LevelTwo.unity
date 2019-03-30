@@ -238,7 +238,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 44056123}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1790, y: 280, z: 0}
+  m_LocalPosition: {x: -2124.5623, y: 280, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 71018567}
@@ -398,7 +398,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 71018566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 0, z: 0}
+  m_LocalPosition: {x: 1127.2811, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1863510057}
@@ -439,13 +439,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 5
-  mWidth: 1920
+  mWidth: 2255
   mHeight: 1080
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.3333334
+  aspectRatio: 2.0879629
 --- !u!1 &75039376 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100318, guid: 5bf64bf482e30a04592cd368a6301ec0, type: 2}
@@ -2157,7 +2157,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: "\u3000\u3000\u4E94\u6708\u56DB\u65E5\uFF0C\u8FD9\u6B21\u7684\u63A2\u9669\u4EFB\u52A1\u8BA9\u6211\u6709\u79CD\u4E0D\u5B89\u7684\u611F\u89C9\uFF0C\u5173\u4E8E\u8FD9\u5EA7\u8352\u5E9F\u57CE\u5821\u7684\u6050\u6016\u6545\u4E8B\u6211\u4ECE\u513F\u65F6\u5C31\u4E00\u76F4\u542C\u8BF4\uFF0C\u4E5F\u8BB8\u5728\u8FD9\u91CC\u627E\u4E0D\u5230\u91D1\u5B50\uFF0C\u4F46\u662F\u6211\u6562\u4FDD\u8BC1\u86DB\u7F51\u548C\u7070\u5C18\u90FD\u662F\u89E6\u624B\u53EF\u5F97\u7684\u3002"
+  mText: "\u3000\u3000\u4E94\u6708\u56DB\u65E5\n\u8FD9\u6B21\u7684\u63A2\u9669\u4EFB\u52A1\u8BA9\u6211\u6709\u79CD\u4E0D\u5B89\u7684\u611F\u89C9\uFF0C\u5173\u4E8E\u8FD9\u5EA7\u8352\u5E9F\u57CE\u5821\u7684\u6050\u6016\u6545\u4E8B\u6211\u4ECE\u513F\u65F6\u5C31\u4E00\u76F4\u542C\u8BF4\uFF0C\u4E5F\u8BB8\u5728\u8FD9\u91CC\u627E\u4E0D\u5230\u91D1\u5B50\uFF0C\u4F46\u662F\u6211\u6562\u4FDD\u8BC1\u86DB\u7F51\u548C\u7070\u5C18\u90FD\u662F\u89E6\u624B\u53EF\u5F97\u7684\u3002"
   mFontSize: 50
   mFontStyle: 0
   mAlignment: 1
@@ -4459,13 +4459,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 1920
+  mWidth: 2255
   mHeight: 1080
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.3333334
+  aspectRatio: 2.0879629
 --- !u!1001 &842146220
 Prefab:
   m_ObjectHideFlags: 0
@@ -5986,7 +5986,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1159177187}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1805, y: 435, z: 0}
+  m_LocalPosition: {x: -2139.5623, y: 435, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 71018567}
@@ -7698,7 +7698,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1567463701}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -715, y: -330, z: 0}
+  m_LocalPosition: {x: -882.5, y: -330, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1802345964}
@@ -8229,7 +8229,8 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: "\u3000\u3000\u4E94\u6708\u4E94\u65E5 \u592A\u53EF\u6015\u4E86\uFF0C\u8FD9\u91CC\u7684\u5730\u9762\u4E5F\u6709\u8150\u8680\u6027\u4E86\uFF0C\u6211\u4E5F\u8BB8\u8BE5\u65E9\u70B9\u79BB\u5F00\u8FD9\u91CC\uFF0C\u4F46\u662F\u8C01\u4E0D\u5BF9\u5DF2\u7ECF\u53D8\u6210\u602A\u7269\u8718\u86DB\u7684\u56FD\u738B\u738B\u51A0\u611F\u5174\u8DA3\u5462\uFF1F\u6211\u60F3\u660E\u5929\u518D\u8BD5\u8BD5\uFF0C\u73B0\u5728\u53EA\u8981\u7761\u89C9\u7684\u65F6\u5019\u5C0F\u5FC3\u4E0D\u8981\u6454\u4E0B\u53BB\u5C31\u884C\u4E86"
+  mText: "\u3000\u3000\u4E94\u6708\u4E94\u65E5\n\u592A\u53EF\u6015\u4E86\uFF0C\u8FD9\u91CC\u7684\u5730\u9762\u4E5F\u6709\u8150\u8680\u6027\uFF0C\u6211\u4E5F\u8BB8\u8BE5\u65E9\u70B9\u79BB\u5F00\u8FD9\u91CC\uFF0C\u4F46\u662F\u8C01\u4E0D\u5BF9\u5DF2\u7ECF\u53D8\u6210\u602A\u7269\u7684\u56FD\u738B\u7684\u738B\u51A0\u611F\u5174\u8DA3\u5462\uFF1F\u6211\u60F3\u660E\u5929\u518D\u8BD5\u8BD5\uFF0C\u73B0\u5728\u53EA\u8981\u5C0F\u5FC3\u4E0D\u8981\u6454\u4E0B\u53BB\u5C31\u884C\u4E86\n
+    \    \u4E94\u6708\u516D\u65E5 \n\u6211\u88AB\u6B3A\u9A97\u4E86\uFF0C\u6211\u4E0D\u5E94\u8BE5\u6765\u8FD9\u91CC..."
   mFontSize: 50
   mFontStyle: 0
   mAlignment: 1
