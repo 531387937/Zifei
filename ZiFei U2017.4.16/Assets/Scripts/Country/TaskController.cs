@@ -33,8 +33,10 @@ public class TaskController : MonoBehaviour
 		m_chooseUI[1].SetActive (false);									//关闭选项栏
 		GameManager.Instance.SetStoveState (1);
 		GameManager.Instance.OpenUsualBtn ();							//开启常用按钮
-		GameManager.Instance.SetTaskIndexState(3,2);					//完成铁匠任务
-	}
+		GameManager.Instance.SetTaskIndexState(3,1);					//完成铁匠任务
+        GameManager.Instance.SetTaskIndexState(7, 10);                   //接受铁匠分支任务
+        CheckBtnController.Instance.SetDialogState(1);
+    }
 	void OnChooseBBtnClick(GameObject _bBtn)							//点击选项B
 	{
         AudioManager.Instance.SoundPlay(Global.GetInstance().audioName_BtnClick2);
@@ -43,7 +45,7 @@ public class TaskController : MonoBehaviour
 		GameManager.Instance.SetStoveState (1);
 		GameManager.Instance.OpenUsualBtn ();							//开启常用按钮
 		GameManager.Instance.SetSmithyState (true);						//开启铁匠铺
-		GameManager.Instance.SetTaskIndexState(3,2);					//完成铁匠任务
+		GameManager.Instance.SetTaskIndexState(3,1);					//完成铁匠任务
 	}
 	void OnChooseCBtnClick(GameObject _vBtn)							//点击选项C
 	{
@@ -65,6 +67,10 @@ public class TaskController : MonoBehaviour
 			m_taskUI.SetActive (false);									//关闭任务框
 			GameManager.Instance.OpenUsualBtn ();						//开启常用按钮
 		}
+        if(m_dialogNPCNum == 3&& GameManager.Instance.GetTaskIndexState(7) == 10)
+        {
+            GameManager.Instance.SetTaskIndexState(7, 1);
+        }
 		else
 		{
 			switch(m_dialogNPCNum-1)
@@ -93,7 +99,7 @@ public class TaskController : MonoBehaviour
 				break;
 			}
 			m_taskUI.SetActive (false);									//关闭任务框
-			if(m_dialogNPCNum==3)										//如果接受的是铁匠任务 弹出选项栏
+			if(m_dialogNPCNum==3 && GameManager.Instance.GetTaskIndexState(7) != 10 && GameManager.Instance.GetTaskIndexState(7) != 1)										//如果接受的是铁匠任务 弹出选项栏
 			{
 				m_chooseUI[0].SetActive(true);								//弹出选项栏
 				m_chooseUI[1].SetActive(true);								//弹出选项栏
@@ -135,7 +141,17 @@ public class TaskController : MonoBehaviour
 		int _dialogState = CheckBtnController.Instance.GetDialogState ();               //获取对话状态
         if (_dialogState==3)																//对话显示完毕需要弹出任务框
 		{
-			if(GameManager.Instance.GetTaskIndexState(3)==1&&(GameManager.Instance.GetStoveState()!=2))			//如果已接受铁匠任务但炉子未修理
+            if(GameManager.Instance.GetTaskIndexState(3) == 1&& GameManager.Instance.GetTaskIndexState(7) == 10)
+            {
+                m_taskUI.SetActive(true);
+                m_taskTitle.text = xnl[7].ChildNodes[0].InnerText;     //显示任务标题
+                m_taskContent.text = xnl[7].ChildNodes[1].InnerText;		//显示任务内容
+                GameManager.Instance.CloseUsualBtn();                                       //关闭常用按钮
+                CheckBtnController.Instance.SetDialogState(0);								//对话状态变量归零
+                return;
+            }
+			if(GameManager.Instance.GetTaskIndexState(3)==1&&(GameManager.Instance.GetStoveState()!=2)
+               && GameManager.Instance.GetTaskIndexState(7) != 10 && GameManager.Instance.GetTaskIndexState(7) != 1)			//如果已接受铁匠任务但炉子未修理
 			{
 				m_chooseUI[0].SetActive(true);												//弹出选项框
 				m_chooseUI[1].SetActive(true);												//弹出选项框

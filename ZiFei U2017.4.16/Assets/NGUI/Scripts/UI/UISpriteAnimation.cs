@@ -95,7 +95,7 @@ public class UISpriteAnimation : MonoBehaviour
             {
                 mIndex = 3;
                 timer += Time.deltaTime;
-                if (timer >= 0.5f)
+                if (timer >= 1.5f)
                 {
                     pause = false;
                 }

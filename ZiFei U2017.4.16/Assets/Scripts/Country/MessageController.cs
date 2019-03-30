@@ -22,7 +22,7 @@ public class MessageController : MonoBehaviour
 	private bool isCanShowMessage = false;
 	private float showDelayTime = 0.8f;
 	private float showDelayTimer = 0f;
-    private bool setpause=false;
+    private bool setpause=true;
     void Update()
 	{
 
@@ -135,10 +135,14 @@ public class MessageController : MonoBehaviour
 			m_messageBox.SetActive(true);													//开启消息栏
 			m_messageAni = m_messageBox.gameObject.AddComponent<UISpriteAnimation>();       //加载消息动画
                 m_messageAni.loop = false;														//消息动画不循环
-			m_messageAni.namePrefix = "ani_message";										//指定消息动画图
-			m_messageAni.framesPerSecond = 12;												//消息动画帧率
+			m_messageAni.namePrefix = "ani_message";                                        //指定消息动画图
+                if (GameManager.Instance.GetTaskIndexState(0) == 0)
+                {
+                    setpause = false;
+                }
+            m_messageAni.framesPerSecond = 12;												//消息动画帧率
             m_messageState = 2;
-                setpause = false;
+                
 			break;
 		case 2:
 			if(!m_messageAni.isPlaying)														//消息动画已播放

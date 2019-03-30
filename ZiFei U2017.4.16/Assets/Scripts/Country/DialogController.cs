@@ -28,59 +28,73 @@ public class DialogController : MonoBehaviour
 
 	void Update()
 	{
-		int _dialogState = CheckBtnController.Instance.GetDialogState ();					//获取是否按下对话按钮
-		
-		if(_dialogState>0)																	//按下对话按钮
-		{
-			Vector3 _screenPos = Camera.main.WorldToScreenPoint (CheckBtnController.Instance.GetDialogPos());	//世界坐标转为屏幕坐标	
-			Vector3 _uiScreenPos = UICamera.mainCamera.ScreenToWorldPoint(_screenPos);		//转为NGUI世界坐标
-			_uiScreenPos.z = 0f;															//NGUI坐标中去掉Z轴
-			m_dialogLabel.gameObject.transform.position = _uiScreenPos;						//指定对话框位置
+		int _dialogState = CheckBtnController.Instance.GetDialogState ();                   //获取是否按下对话按钮
 
-			if(_dialogState==1)																//如果按下对话按钮需弹出对话框
-			{
-                AudioManager.Instance.SoundPlay(Global.GetInstance().audioName_Country_DialogSpeak);
+        if (_dialogState > 0)                                                                   //按下对话按钮
+        {
+            Vector3 _screenPos = Camera.main.WorldToScreenPoint(CheckBtnController.Instance.GetDialogPos());    //世界坐标转为屏幕坐标	
+            Vector3 _uiScreenPos = UICamera.mainCamera.ScreenToWorldPoint(_screenPos);      //转为NGUI世界坐标
+            _uiScreenPos.z = 0f;                                                            //NGUI坐标中去掉Z轴
+            m_dialogLabel.gameObject.transform.position = _uiScreenPos;                     //指定对话框位置
 
-                m_dialogNPCNum = CheckBtnController.Instance.GetDialogIndex();				//获取对话人物
-				GameManager.Instance.SetSaveNPCNum(m_dialogNPCNum+1);						//改变最后遇到的NPC编号
-				int _diaIndex = GetDiaIndex(m_dialogNPCNum+1);                              //获取对话编号
-
-                m_dialogText =  xnl[m_dialogNPCNum].ChildNodes[_diaIndex].InnerText;		//获取对话内容
-				GameManager.Instance.SetDialogText(m_dialogText);							//指定对话内容（为打字机）
-				if(_diaIndex==1)															//如果需要弹出任务框
-				{
-					m_dialogTail.SetActive(true);											//显示未完待续的小尾巴
-					CheckBtnController.Instance.SetDialogState(2);							//开启需弹出任务框变量
-				}
-				else if(GameManager.Instance.GetStoveState()!=2&&_diaIndex==2&&m_dialogNPCNum==2)//如果已接受铁匠任务但炉子未修理
-				{
-					m_dialogTail.SetActive(true);
-					CheckBtnController.Instance.SetDialogState(2);
-				}
-				else 																		//无需弹出任务框
-					CheckBtnController.Instance.SetDialogState(4);
-				m_dialogLabel.text ="";													//置空对话内容
-				m_dialogLabel.gameObject.AddComponent<TypewriterEffect>();					//添加打印机效果
-				SetDiaPointDir();															//摆正对话框下方箭头朝向
-				m_dialogLabel.gameObject.SetActive(true);									//开启对话
-
-			}
-			else if(_dialogState==3)														//对话显示完毕需要弹出任务框
-			{
-				m_dialogLabel.gameObject.SetActive(false);									//关闭对话框
-				m_dialogTail.SetActive(false);												//隐藏小尾巴
-				Destroy(m_dialogLabel.gameObject.GetComponent("TypewriterEffect"));			//移除打印机效果
-			}
-			else if(_dialogState==5)														//对话完毕需弹出铁匠铺
-			{
-				GameManager.Instance.SetSmithyState(true);									//打开铁匠铺
-				CheckBtnController.Instance.SetDialogState(0);								//对话状态变量归零
-			}
-			else if(_dialogState==6)                                                        //对话完毕需弹出酒馆
+            if (_dialogState == 1)                                                              //如果按下对话按钮需弹出对话框
             {
-				GameManager.Instance.SetBarState(true);										//打开酒馆买卖界面
-				CheckBtnController.Instance.SetDialogState(0);								//对话状态变量归零
-			}
+                AudioManager.Instance.SoundPlay(Global.GetInstance().audioName_Country_DialogSpeak);
+                if (GameManager.Instance.GetTaskIndexState(3) == 1 && GameManager.Instance.GetTaskIndexState(7) == 10) //如果可以接受铁匠的支线任务
+                {
+                    m_dialogNPCNum = CheckBtnController.Instance.GetDialogIndex();
+                    m_dialogText = xnl[m_dialogNPCNum].ChildNodes[4].InnerText;     //获取对话内容
+                    GameManager.Instance.SetDialogText(m_dialogText);                           //指定对话内容（为打字机）
+                   
+                        CheckBtnController.Instance.SetDialogState(2);                          //开启需弹出任务框变量
+                    m_dialogLabel.text = "";                                                    //置空对话内容
+                    m_dialogLabel.gameObject.AddComponent<TypewriterEffect>();                  //添加打印机效果
+                    SetDiaPointDir();                                                           //摆正对话框下方箭头朝向
+                    m_dialogLabel.gameObject.SetActive(true);                                   //开启对话
+                    m_dialogTail.SetActive(true);
+                }
+                else
+                {
+                    m_dialogNPCNum = CheckBtnController.Instance.GetDialogIndex();              //获取对话人物
+                GameManager.Instance.SetSaveNPCNum(m_dialogNPCNum + 1);                     //改变最后遇到的NPC编号
+                int _diaIndex = GetDiaIndex(m_dialogNPCNum + 1);                              //获取对话编号
+
+                m_dialogText = xnl[m_dialogNPCNum].ChildNodes[_diaIndex].InnerText;     //获取对话内容
+                GameManager.Instance.SetDialogText(m_dialogText);                           //指定对话内容（为打字机）
+                if (_diaIndex == 1)                                                         //如果需要弹出任务框
+                {
+                    m_dialogTail.SetActive(true);                                           //显示未完待续的小尾巴
+                    CheckBtnController.Instance.SetDialogState(2);                          //开启需弹出任务框变量
+                }
+                else if (GameManager.Instance.GetStoveState() != 2 && _diaIndex == 2 && m_dialogNPCNum == 2)//如果已接受铁匠任务但炉子未修理
+                {
+                    m_dialogTail.SetActive(true);
+                    CheckBtnController.Instance.SetDialogState(2);
+                }
+                else                                                                        //无需弹出任务框
+                    CheckBtnController.Instance.SetDialogState(4);
+                m_dialogLabel.text = "";                                                    //置空对话内容
+                m_dialogLabel.gameObject.AddComponent<TypewriterEffect>();                  //添加打印机效果
+                SetDiaPointDir();                                                           //摆正对话框下方箭头朝向
+                m_dialogLabel.gameObject.SetActive(true);                                   //开启对话
+            }
+        }
+        else if (_dialogState == 3)                                                     //对话显示完毕需要弹出任务框
+        {
+            m_dialogLabel.gameObject.SetActive(false);                                  //关闭对话框
+            m_dialogTail.SetActive(false);                                              //隐藏小尾巴
+            Destroy(m_dialogLabel.gameObject.GetComponent("TypewriterEffect"));         //移除打印机效果
+        }
+        else if (_dialogState == 5)                                                     //对话完毕需弹出铁匠铺
+        {
+            GameManager.Instance.SetSmithyState(true);                                  //打开铁匠铺
+            CheckBtnController.Instance.SetDialogState(0);                              //对话状态变量归零
+        }
+        else if (_dialogState == 6)                                                        //对话完毕需弹出酒馆
+        {
+            GameManager.Instance.SetBarState(true);                                     //打开酒馆买卖界面
+            CheckBtnController.Instance.SetDialogState(0);                              //对话状态变量归零
+        }
 		}
 		
 		else if(CheckBtnController.Instance.GetThingDialogState()==1)						//按下调查村庄中的物品
@@ -96,7 +110,12 @@ public class DialogController : MonoBehaviour
 				int _diaIndex = CheckBtnController.Instance.GetThingDialogIndex();			//获取对话索引
 				if(_diaIndex==16)															//当前碰到的是罐子
 					_diaIndex = 11;															//指定罐子的对话索引
-				
+				if(_diaIndex==1&&GameManager.Instance.GetTaskIndexState(7)==1)
+                {
+                    m_dialogText = xnlCountryThing[_diaIndex].ChildNodes[1].InnerText;
+                    GameManager.Instance.SetTaskIndexState(7, 2);
+                }
+                else
 				m_dialogText =  xnlCountryThing[_diaIndex].ChildNodes[GetThingDiaIndex(_diaIndex)].InnerText;			//获取对话内容
 				GameManager.Instance.SetDialogText(m_dialogText);							//为打字机指定对话内容
 				m_diaLogTimer = -3f;														//对话已显示（）保证只执行一次
@@ -179,10 +198,14 @@ public class DialogController : MonoBehaviour
             }
 			break;
 		case 3:																		//和铁匠对话
-			if(GameManager.Instance.GetTaskIndexState(2)==0)						//未接受书店老板任务
+			if(GameManager.Instance.GetTaskIndexState(2)==0)						//未接受铁匠任务
 				_index = 0;
-			else 																	//接受书店老板任务
-				_index = GameManager.Instance.GetTaskIndexState(3) + 1;				//根据书店老板任务状态确定对话编号
+            if(GameManager.Instance.GetTaskIndexState(7)==1)
+                {
+                    _index = 5;
+                }
+			else 																	//接受铁匠任务
+				_index = GameManager.Instance.GetTaskIndexState(3) + 1;				//根据铁匠任务状态确定对话编号
 			break;
 		case 4:                                                                     //和水手对话
                 if (GameManager.Instance.GetTaskIndexState(2) < 2)                          //未完成书店老板任务

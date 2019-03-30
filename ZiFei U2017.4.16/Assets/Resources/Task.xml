@@ -28,4 +28,8 @@
 			<taskTitle>混入酒馆</taskTitle>
 			<taskContent>进入到酒馆里，里面应该会有酒的。</taskContent>
 		</Task>
+  <Task>
+    <taskTitle>清扫灰尘</taskTitle>
+    <taskContent>想要借到扳手，需要先打扫被锅炉弄脏的地面。</taskContent>
+  </Task>
 </note>

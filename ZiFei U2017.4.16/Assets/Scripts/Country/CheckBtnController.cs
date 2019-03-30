@@ -311,7 +311,11 @@ public class CheckBtnController : MonoBehaviour
                 }
                 else if (m_thingDiaBtnCheck == 1)
                 {
-
+                    if (GameManager.Instance.GetTaskIndexState(7) == 1)
+                    {
+                        
+                        m_thingDiaBtnCheck = 1;
+                    }
                     if (m_thingDialogIndex == 0 && GameManager.Instance.GetStoveState() != 2 && GameManager.Instance.GetItemNum(3) != 0)
                     {
                         m_thingDiaBtnCheck = 2;
@@ -602,7 +606,7 @@ public class CheckBtnController : MonoBehaviour
                             m_thingDialogIndex = i;                                 //指定物品对话编号
                             m_countryDiaSelectBox[i].SetActive(true);               //显示水阀开关选中框
                         }
-                    }
+                    }                   
                     else if (i == 15)                                                   //主角碰到信
                     {
 
@@ -696,6 +700,7 @@ public class CheckBtnController : MonoBehaviour
                             m_thingDialogState = false;
                         }
                     }
+                    
                     else if (i == 4)//灯塔的激活按钮
                     {
                         if (GameManager.Instance.GetLightHouseState() != 6)                    //按钮 没按过
