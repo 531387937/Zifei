@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
 	private int[] m_itemNum = new int[20];										//物品数量
 	private int m_itemEquipIndex = 0;											//当前装备的道具
 	private bool m_closeJoyStick = false;										//关闭摇杆
-	private int[] m_taskIndexState = new int[8];								//每个任务状态
+	private int[] m_taskIndexState = new int[7];								//每个任务状态
 	private int m_currScene = 0;												//玩家当前所处的场景（0村庄 1主角家 2村长家 3酒馆）
 	private int m_currSaveIndex = 0;											//当前存至的档位编号
 	private bool[] m_countryPanel = new bool[5];                                //村庄中的展板是否打开		（0老虎机）

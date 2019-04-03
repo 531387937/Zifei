@@ -16,10 +16,8 @@
 		<countryDia> 
 			<chatBefore>要不要买点东西呀。</chatBefore>
 			<chatTask>那个炉子坏了，你要工具修自己修。</chatTask>
-			<chatTaskGet>锅炉灰还没打扫干净呢。</chatTaskGet>
+			<chatTaskGet>真不懂现在的小孩子。</chatTaskGet>
 			<chatAfter>要是有钱再买点东西呀。</chatAfter>
-      <chatFenzhi>想要借工具的话你要先打扫灰尘。</chatFenzhi>
-      <chatFenzhiGet>不想打扫的话拿钱买也可以呀。</chatFenzhiGet>
 		</countryDia>
 		<countryDia> 
 			<chatBefore>我不仅是守护着灯塔，就连村子的水库也是我看管！</chatBefore>
@@ -54,7 +52,6 @@
 		</countryThing>
 		<countryThing>
 			<guoLuZha>一堆锅炉渣</guoLuZha>
-      <guoluZhaClear>清理了锅炉渣</guoluZhaClear>
 		</countryThing>
 		<countryThing>
 			<tuQiu>肥沃的土地</tuQiu>
