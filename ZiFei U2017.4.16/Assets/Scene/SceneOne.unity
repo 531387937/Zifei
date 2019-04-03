@@ -7708,13 +7708,13 @@ MonoBehaviour:
   updateAnchors: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 2313
+  mWidth: 1920
   mHeight: 1080
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.1416667
+  aspectRatio: 1.7777778
 --- !u!1 &307967512
 GameObject:
   m_ObjectHideFlags: 0
@@ -25257,7 +25257,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.3, y: 1.55}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -25269,7 +25269,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1187828587}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.704277, y: -16.43, z: -0.3}
+  m_LocalPosition: {x: 45.79, y: -16.41, z: -0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1020762157}
@@ -26743,7 +26743,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1227722491}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.55, z: 0}
+  m_LocalPosition: {x: 0, y: 1.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1614447276}
@@ -31810,7 +31810,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: 03
+  mText: Auto
   mFontSize: 70
   mFontStyle: 0
   mAlignment: 0
@@ -34353,6 +34353,7 @@ MonoBehaviour:
   - {fileID: 1647512545}
   m_heroWalkSpeed: 7
   m_jumpForceVertical: 750
+  m_verticalCurrentState: 0
 --- !u!95 &1614447279
 Animator:
   serializedVersion: 3

@@ -113,7 +113,7 @@ public class SceneFadeInOut : MonoBehaviour
 				break;
 			}
             //xy 19.3.30
-            int _saveIndex = GameManager.Instance.SaveCurrData();                                           //存档
+            int _saveIndex = GameManager.Instance.SaveCurrData(true);                                           //存档
             _saveIndex++;
             //
             SceneManager.LoadScene("LoadingScene");

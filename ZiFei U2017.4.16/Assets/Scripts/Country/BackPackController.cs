@@ -484,8 +484,7 @@ public class BackPackController : MonoBehaviour
     void OnSaveInfoSureBtnClick(GameObject _okBtn)                                                        //点击了存档提示面板确定按钮
     {
         AudioManager.Instance.SoundPlay(Global.GetInstance().audioName_BtnClick2);
-
-        int _saveIndex = GameManager.Instance.SaveCurrData();                                           //存档
+        int _saveIndex = GameManager.Instance.SaveCurrData(false);                                           //存档
         _saveIndex++;
         m_saveInfoLabel.text = "存档完毕，已存至档位" + _saveIndex.ToString();
         //m_usualBtn[2].GetComponent<UISprite>().spriteName = "btn_save02";                               //更改存档按钮图

@@ -137,8 +137,8 @@ public class GameManager : MonoBehaviour
     void Start()
 	{
 
-		GameDataManager.Instance.Load ();
-		if(GameDataManager.Instance.gameData.GameCurrentData.startState)						    //如果需要开启开始界面
+        GameDataManager.Instance.Load();
+        if (GameDataManager.Instance.gameData.GameCurrentData.startState)						    //如果需要开启开始界面
 		{
             CloseUsualBtn();													                    //关闭常用按钮
                 startSceneController.enabled = true;			                                        //开启开始界面函数
@@ -234,7 +234,7 @@ public class GameManager : MonoBehaviour
         waterBoxController.ResetWaterSwitchState();//水阀设置状态
         jarController.ResetJarState();//罐子设置状态
 
-        GameDataManager.Instance.Save();                                    //存储数据
+        //GameDataManager.Instance.Save();                                    //存储数据
     }
 
 
@@ -624,8 +624,7 @@ public class GameManager : MonoBehaviour
             GameDataManager.Instance.gameData.GameCurrentData.keyState[i] = m_keyState[i];
 
         GameDataManager.Instance.gameData.GameCurrentData.BGMVolume = m_volume[0];				//记录当前音量情况
-        GameDataManager.Instance.gameData.GameCurrentData.SoundVolume = m_volume[1];
-
+        GameDataManager.Instance.gameData.GameCurrentData.SoundVolume = m_volume[1];														//存储文件
         GameDataManager.Instance.gameData.GameCurrentData = SaveData();
         GameDataManager.Instance.Save();										//存下数据
 		m_levelState = _levelIndex;
@@ -1038,48 +1037,53 @@ public class GameManager : MonoBehaviour
 		GameDataManager.Instance.Save ();
 	}
 
-	public int SaveCurrData()																		//当前需要存档
+	public int SaveCurrData(bool AutoSave=true)																		//当前需要存档
 	{
 
         GameSaveData dataTemp = SaveData();
         GameDataManager.Instance.gameData.GameCurrentData = dataTemp;
-        
-        
-        
-        //-----------------------查找存档的档位-------------------------------------------------------
 
-        if (!GameDataManager.Instance.gameData.GameSaveData1.used)									//如果存档点1未被使用
-			m_currSaveIndex = 0;
-		else if(!GameDataManager.Instance.gameData.GameSaveData2.used)							//如果存档点2未被使用
-			m_currSaveIndex = 1;
-		else if(!GameDataManager.Instance.gameData.GameSaveData3.used)							//如果存档点3未被使用
-			m_currSaveIndex = 2;
-		else 																						//如果三个存档点均被使用
-		{
-			m_currSaveIndex = GameDataManager.Instance.gameData.GameCurrentData.saveDataIndex;
-            if (m_currSaveIndex != 2)                                                                   //从最近一次存档点索引开始向后覆盖
-                m_currSaveIndex++;
-            else
+
+
+        //-----------------------查找存档的档位-------------------------------------------------------
+        if (!AutoSave)
+        {
+            if (!GameDataManager.Instance.gameData.GameSaveData1.used)                                  //如果存档点1未被使用
                 m_currSaveIndex = 0;
+            else if (!GameDataManager.Instance.gameData.GameSaveData2.used)                         //如果存档点2未被使用
+                m_currSaveIndex = 1;
+            //else if(!GameDataManager.Instance.gameData.GameSaveData3.used)							//如果存档点3未被使用
+            //	m_currSaveIndex = 2;
+            else                                                                                        //如果三个存档点均被使用
+            {
+                m_currSaveIndex = GameDataManager.Instance.gameData.GameCurrentData.saveDataIndex;
+                if (m_currSaveIndex != 1)                                                                   //从最近一次存档点索引开始向后覆盖
+                    m_currSaveIndex++;
+                else
+                    m_currSaveIndex = 0;
+            }
+            GameDataManager.Instance.gameData.GameCurrentData.saveDataIndex = m_currSaveIndex;
+            switch (m_currSaveIndex)                                                                        //判定当前存档点编号
+            {
+                case 0:
+                    GameDataManager.Instance.gameData.GameSaveData1 = dataTemp;                     //更改存档点1信息
+                    break;
+                case 1:
+                    GameDataManager.Instance.gameData.GameSaveData2 = dataTemp;                     //更改存档点2信息
+                    break;
+                //case 2:
+                //    GameDataManager.Instance.gameData.GameSaveData3 = dataTemp;                     //更改存档点3信息
+                //    break;
+            }
         }
-		GameDataManager.Instance.gameData.GameCurrentData.saveDataIndex = m_currSaveIndex;
-		switch(m_currSaveIndex)																		//判定当前存档点编号
-		{
-		case 0:																						
-			GameDataManager.Instance.gameData.GameSaveData1 = dataTemp;						//更改存档点1信息
-			break;
-		case 1:
-			GameDataManager.Instance.gameData.GameSaveData2 = dataTemp;						//更改存档点2信息
-			break;
-		case 2:
-			GameDataManager.Instance.gameData.GameSaveData3 = dataTemp;						//更改存档点3信息
-			break;
-		}
+        if(AutoSave)
+        {
+            GameDataManager.Instance.gameData.GameSaveData3 = dataTemp;
+        }
 		GameDataManager.Instance.Save ();															//存储文件
 
         return m_currSaveIndex;																		//返回当前存档点编号
 	}
-
     //保存当前的数据
     public GameSaveData SaveData() {
 

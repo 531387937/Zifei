@@ -489,7 +489,8 @@ public class LevelThreeGameManager : MonoBehaviour
         GameDataManager.Instance.gameData.GameCurrentData.equipedIndex = m_itemEquipIndex;
         GameDataManager.Instance.gameData.GameCurrentData.BGMVolume = m_volume[0];      //记录当前音量情况
         GameDataManager.Instance.gameData.GameCurrentData.SoundVolume = m_volume[1];
-        GameDataManager.Instance.Save();                                    //存档
+        //GameDataManager.Instance.Save();                                    //存档
+
 
 
 
@@ -717,7 +718,7 @@ public class LevelThreeGameManager : MonoBehaviour
 			GameDataManager.Instance.gameData.GameSaveData3 = _saveDataTemp;						//更改存档点3信息
 			break;
 		}
-		GameDataManager.Instance.Save ();															//存储文件
+		//GameDataManager.Instance.Save ();															//存储文件
 		_saveDataTemp = null;																		//临时变量置空
 		return m_currSaveIndex;																		//返回当前存档点编号
 	}

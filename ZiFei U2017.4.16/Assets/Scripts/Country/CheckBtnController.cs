@@ -292,7 +292,7 @@ public class CheckBtnController : MonoBehaviour
             
 			else if (m_thingDialogIndex == 16)                                          //如果碰到罐子
             {
-                if (GameManager.Instance.GetJarState()  == 0)                            //如果当前罐子我未被调查
+                if (GameManager.Instance.GetJarState() == 0)                            //如果当前罐子我未被调查
                 {
 
                     AudioManager.Instance.SoundPlay(Global.GetInstance().audioName_Country_Sad);
@@ -300,7 +300,10 @@ public class CheckBtnController : MonoBehaviour
                     m_thingDiaBtnCheck = 1;                                             //开启对话框
                 }
                 else                                                                    //如果罐子已调查
+                {
                     m_thingDiaBtnCheck = 0;                                             //按下按钮没有反应
+                    GameManager.Instance.SetJarState(0);
+                }                                           
             }
             else
             {
@@ -448,9 +451,9 @@ public class CheckBtnController : MonoBehaviour
                                 else if (m_headHomeThingIndex == 2)                         //按下boss战的门
                                 {
                                 GameDataManager.Instance.gameData.GameCurrentData = GameManager.Instance.SaveData();
-                                GameDataManager.Instance.Save();															//存储文件
+                        GameDataManager.Instance.Save();                                                            //存储文件
 
-                                Global.GetInstance().loadName = "HeadBattleScene";
+                        Global.GetInstance().loadName = "HeadBattleScene";
                                     SceneManager.LoadScene("LoadingScene");
                                 }
                                 break;

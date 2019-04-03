@@ -273,7 +273,7 @@ public class HeadBattleGameManager : MonoBehaviour
 		{
 			GameDataManager.Instance.gameData.GameCurrentData.startState = true;
             GameDataManager.Instance.gameData.GameCurrentData.newHeroState = true;               //当前的数据改为 新数据
-            GameDataManager.Instance.Save();
+            //GameDataManager.Instance.Save();
 
             m_usualBtn[3].SetActive(false);
             m_usualBtn[4].SetActive(false);
@@ -415,7 +415,7 @@ public class HeadBattleGameManager : MonoBehaviour
 		{
 			m_battleState = 4;
 			GameDataManager.Instance.gameData.GameCurrentData.startState = true;
-			GameDataManager.Instance.Save();
+			//GameDataManager.Instance.Save();
             AudioManager.Instance.ThingSoundPlay(Global.GetInstance().audioName_SuccessSound);
 			if (GetAchieveGot(4) == 0)
 			{

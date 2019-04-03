@@ -4,7 +4,7 @@ using System.Collections;
 [RequireComponent(typeof(Animator))]
 public class HeroStateListener : MonoBehaviour
 {
-	[HideInInspector]
+	//[HideInInspector]
     public GameObject m_invisibleColliderObj = null;                    //需要隐藏的碰撞盒
     public GameObject[] m_colliderObj;                                  //村子里的碰撞体
 
@@ -28,7 +28,7 @@ public class HeroStateListener : MonoBehaviour
     private int m_cloudTwoCurrIndex = 0;                                //云2当前显示的图索引号
 
     private HeroStateController.heroHorizontalStates m_horizontalCurrentState = HeroStateController.heroHorizontalStates.idle;
-    private HeroStateController.heroVerticalStates m_verticalCurrentState = HeroStateController.heroVerticalStates.idle;
+    public HeroStateController.heroVerticalStates m_verticalCurrentState = HeroStateController.heroVerticalStates.idle;
 
     //void OnEnable()                                                     //对象可用时 加入到订阅者列表中
     //{
@@ -302,7 +302,6 @@ void OnCollisionEnter2D(Collision2D coll)                           //检测主�
             case HeroStateController.heroVerticalStates.down:               //需转为下行状态
                 m_hideCollider = true;                                      //需要隐藏下方碰撞块
                 ResetCollider();
-
                 break;
             case HeroStateController.heroVerticalStates.falling:            //需转为下落状态	
                 if (m_verticalCurrentState == HeroStateController.heroVerticalStates.jump)              //当前为跳跃状态

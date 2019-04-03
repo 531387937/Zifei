@@ -35,7 +35,7 @@
 		<Item> 
 			<itemID>5</itemID>
 			<itemName>胡子面具</itemName>
-			<itemIntro>　　戴上后看起来老了很多。</itemIntro>
+			<itemIntro>　　戴上后看起来老了很多,可以投掷石头。</itemIntro>
 			<itemNum>-1</itemNum>
 			<itemEquiped>0</itemEquiped>
 			<itemPrice>50</itemPrice>
