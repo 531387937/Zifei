@@ -612,7 +612,10 @@ public class CheckBtnController : MonoBehaviour
                     }                   
                     else if (i == 15)                                                   //主角碰到信
                     {
-
+                        if(!CameraController.secondHelp)
+                        {
+                            CameraController.secondHelp = true;
+                        }
                         if (GameManager.Instance.GetItemNum(0) == 0)              //当前信未获得
                         {
                             m_thingDialogState = true;                              //开启物品可对话状态

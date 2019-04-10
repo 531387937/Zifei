@@ -20,7 +20,8 @@ public class CameraController : MonoBehaviour
 	private int m_UIPanelState = 0;								//UI界面遮罩提示条状态
 	private bool m_uiPanelHelp = false;
 
-
+    public static bool secondHelp = false;
+    private bool show=true;
 	private bool isLikeIpadScreenAspect = false;
 
     public bool UiPanelHelp
@@ -97,7 +98,15 @@ public class CameraController : MonoBehaviour
 			break;
 		}
 
+        if(secondHelp&&show)
+        {
+            show = false;
+            m_uiPanelMask.SetActive(true);
+            GameManager.Instance.CloseUsualBtn();
 
+            m_UIPanelState = 6;
+            m_uiPanelMask.GetComponent<UISprite>().spriteName = "tips04_";
+        }
 
 		if(m_UIPanelState!=0)														//如果需要启动UI面板
 		{
@@ -158,20 +167,65 @@ public class CameraController : MonoBehaviour
 					{
 						if(hit.collider.gameObject == m_uiPanelMask)									//如果点击了后边遮罩图 关闭背包
 						{
-							m_UIPanelState = 0;	
-							m_uiPanelMask.SetActive(false);
+							m_UIPanelState = 5;	
+							//m_uiPanelMask.SetActive(false);
 
 							if(isLikeIpadScreenAspect)
 								m_uiPanelMask.GetComponent<UISprite>().spriteName = "tips01_4by3";
 							else
-                            	m_uiPanelMask.GetComponent<UISprite>().spriteName = "tips01";
+                            	m_uiPanelMask.GetComponent<UISprite>().spriteName = "tips05";
                                 
-							GameManager.Instance.OpenUsualBtn();
-							GameManager.Instance.SetMessageType(3, "家门旁的邮筒收到了新邮件！");
+							//GameManager.Instance.OpenUsualBtn();
+							//GameManager.Instance.SetMessageType(3, "家门旁的邮筒收到了新邮件！");
 						}
 					}
 				}
 				break;
+                case 5:
+                    if (Input.GetMouseButtonDown(0))                                                                //如果鼠标按下
+                    {
+                        Ray ray = UICamera.mainCamera.ScreenPointToRay(Input.mousePosition);
+                        RaycastHit hit;
+                        if (Physics.Raycast(ray, out hit))                                                      //检测鼠标点击区域
+                        {
+                            if (hit.collider.gameObject == m_uiPanelMask)                                   //如果点击了后边遮罩图 关闭背包
+                            {
+                                m_UIPanelState = 0;
+                                m_uiPanelMask.SetActive(false);
+
+                                if (isLikeIpadScreenAspect)
+                                    m_uiPanelMask.GetComponent<UISprite>().spriteName = "tips01_4by3";
+                                else
+                                    m_uiPanelMask.GetComponent<UISprite>().spriteName = "tips01";
+
+                                GameManager.Instance.OpenUsualBtn();
+                                GameManager.Instance.SetMessageType(3, "家门旁的邮筒收到了新邮件！");
+                            }
+                        }
+                    }
+                    break;
+                case 6:
+                    if (Input.GetMouseButtonDown(0))                                                                //如果鼠标按下
+                    {
+                        Ray ray = UICamera.mainCamera.ScreenPointToRay(Input.mousePosition);
+                        RaycastHit hit;
+                        if (Physics.Raycast(ray, out hit))                                                      //检测鼠标点击区域
+                        {
+                            if (hit.collider.gameObject == m_uiPanelMask)                                   //如果点击了后边遮罩图 关闭背包
+                            {
+                                m_UIPanelState = 0;
+                                m_uiPanelMask.SetActive(false);
+
+                                if (isLikeIpadScreenAspect)
+                                    m_uiPanelMask.GetComponent<UISprite>().spriteName = "tips01_4by3";
+                                else
+                                    m_uiPanelMask.GetComponent<UISprite>().spriteName = "tips01";
+                            }
+                        }
+                        GameManager.Instance.OpenUsualBtn();
+
+                    }
+                    break;
 			}
 		}
 	}
