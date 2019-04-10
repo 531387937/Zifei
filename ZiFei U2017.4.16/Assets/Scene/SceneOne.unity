@@ -7708,13 +7708,13 @@ MonoBehaviour:
   updateAnchors: 0
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 2085
+  mWidth: 2119
   mHeight: 1080
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.3333334
+  aspectRatio: 1.9620371
 --- !u!1 &307967512
 GameObject:
   m_ObjectHideFlags: 0
@@ -12220,7 +12220,7 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 114515104785672780, guid: 1a1a9ecf2b1634559b4138a068342e7a, type: 2}
+  mAtlas: {fileID: 114971432526735248, guid: b532ef0bdbcd6ce41a6627154d9117f4, type: 2}
   mSpriteName: tips01
   mFillCenter: 1
 --- !u!65 &488692459
@@ -18229,7 +18229,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400310, guid: 5bf64bf482e30a04592cd368a6301ec0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 400310, guid: 5bf64bf482e30a04592cd368a6301ec0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -18254,21 +18254,6 @@ Prefab:
     - target: {fileID: 400310, guid: 5bf64bf482e30a04592cd368a6301ec0, type: 2}
       propertyPath: m_RootOrder
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114225498198350704, guid: 5bf64bf482e30a04592cd368a6301ec0,
-        type: 2}
-      propertyPath: mColor.r
-      value: 0.20784314
-      objectReference: {fileID: 0}
-    - target: {fileID: 114225498198350704, guid: 5bf64bf482e30a04592cd368a6301ec0,
-        type: 2}
-      propertyPath: mColor.g
-      value: 0.20784314
-      objectReference: {fileID: 0}
-    - target: {fileID: 114225498198350704, guid: 5bf64bf482e30a04592cd368a6301ec0,
-        type: 2}
-      propertyPath: mColor.b
-      value: 0.20784314
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bf64bf482e30a04592cd368a6301ec0, type: 2}

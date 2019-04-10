@@ -195,7 +195,7 @@ public class LevelTwoBigSpiderController : MonoBehaviour
 				float _disSpiderX = m_ironDoor.transform.position.x - this.transform.position.x;	//判定此时蜘蛛和铁门的距离
 				float _disHeroX = m_ironDoor.transform.position.x - m_spiderHero.transform.position.x;
 
-				if (Mathf.Abs (_disHeroX) < 1.5f) {
+				if (Mathf.Abs (_disHeroX) < 1.7f) {
 					LevelTwoGameManager.Instance.SetHeroBloodReduce (0.6f);
 				}	
 

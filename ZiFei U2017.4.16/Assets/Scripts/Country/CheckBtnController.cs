@@ -314,11 +314,11 @@ public class CheckBtnController : MonoBehaviour
                 }
                 else if (m_thingDiaBtnCheck == 1)
                 {
-                    if (GameManager.Instance.GetTaskIndexState(7) == 1)
-                    {
+                    //if (GameManager.Instance.GetTaskIndexState(7) == 1)
+                    //{
                         
-                        m_thingDiaBtnCheck = 1;
-                    }
+                    //    m_thingDiaBtnCheck = 1;
+                    //}
                     if (m_thingDialogIndex == 0 && GameManager.Instance.GetStoveState() != 2 && GameManager.Instance.GetItemNum(3) != 0)
                     {
                         m_thingDiaBtnCheck = 2;

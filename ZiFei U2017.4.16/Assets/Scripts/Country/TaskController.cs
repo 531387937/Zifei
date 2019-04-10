@@ -34,6 +34,7 @@ public class TaskController : MonoBehaviour
         GameManager.Instance.SetStoveState(1);
         GameManager.Instance.OpenUsualBtn();                            //开启常用按钮
         GameManager.Instance.SetTaskIndexState(3, 2);                   //完成铁匠任务
+        GameManager.Instance.SaveCurrData();
     }
     void OnChooseBBtnClick(GameObject _bBtn)                            //点击选项B
     {
@@ -44,6 +45,7 @@ public class TaskController : MonoBehaviour
         GameManager.Instance.OpenUsualBtn();                            //开启常用按钮
         GameManager.Instance.SetSmithyState(true);                      //开启铁匠铺
         GameManager.Instance.SetTaskIndexState(3, 2);                   //完成铁匠任务
+        GameManager.Instance.SaveCurrData();
     }
     void OnChooseCBtnClick(GameObject _vBtn)                            //点击选项C
     {
@@ -62,6 +64,7 @@ public class TaskController : MonoBehaviour
             GameManager.Instance.SetItemNum(0, 1);                      //物品栏增加一封信
             GameManager.Instance.SetReadLetterState(2);                 //信件已接受
             GameManager.Instance.SetTaskIndexState(0, 1);               //改变任务进度
+            GameManager.Instance.SaveCurrData();
             m_taskUI.SetActive(false);                                  //关闭任务框
             GameManager.Instance.OpenUsualBtn();                        //开启常用按钮
         }
@@ -74,22 +77,27 @@ public class TaskController : MonoBehaviour
                     GameManager.Instance.SetTaskIndexState(1, 1);           //接受村长任务
                     GameManager.Instance.SetCurrAddMoney(100);
                     GameManager.Instance.SetMessageType(2, "100金币");        //获取村长给的100金币
+                    GameManager.Instance.SaveCurrData();
                     break;
                 case 1:                                                     //对话人为书店老板
                     GameManager.Instance.SetTaskIndexState(1, 2);           //完成村长任务
                     GameManager.Instance.SetTaskIndexState(2, 1);           //接受书店老板任务
+                    GameManager.Instance.SaveCurrData();
                     break;
                 case 2:                                                     //对话人为铁匠
                     GameManager.Instance.SetTaskIndexState(3, 1);           //接受铁匠任务
                     break;
                 case 3:                                                     //对话人为水手
                     GameManager.Instance.SetTaskIndexState(4, 1);           //接受水手任务
+                    GameManager.Instance.SaveCurrData();
                     break;
                 case 4:                                                     //对话人为酒鬼
                     GameManager.Instance.SetTaskIndexState(5, 1);            //接受酒鬼任务
+                    GameManager.Instance.SaveCurrData();
                     break;
                 case 5:                                                     //对话人为酒保
                     GameManager.Instance.SetTaskIndexState(6, 1);           //接受酒保任务
+                    GameManager.Instance.SaveCurrData();
                     break;
             }
             m_taskUI.SetActive(false);                                  //关闭任务框

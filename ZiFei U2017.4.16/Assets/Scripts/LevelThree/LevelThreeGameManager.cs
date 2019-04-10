@@ -718,8 +718,8 @@ public class LevelThreeGameManager : MonoBehaviour
 			GameDataManager.Instance.gameData.GameSaveData3 = _saveDataTemp;						//更改存档点3信息
 			break;
 		}
-		//GameDataManager.Instance.Save ();															//存储文件
-		_saveDataTemp = null;																		//临时变量置空
+        GameDataManager.Instance.Save();															//存储文件
+        _saveDataTemp = null;																		//临时变量置空
 		return m_currSaveIndex;																		//返回当前存档点编号
 	}
 
@@ -873,6 +873,4 @@ public class LevelThreeGameManager : MonoBehaviour
 		}
 		return _used;
 	}
-
-
 }

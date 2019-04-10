@@ -40,9 +40,8 @@ public class CameraController : MonoBehaviour
 	void Awake(){
 
 		if ((float)Screen.width / Screen.height < 1.7f)
-			isLikeIpadScreenAspect = true;	
-
-	}
+			isLikeIpadScreenAspect = true;
+    }
 
     void Start () 
 	{

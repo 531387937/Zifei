@@ -138,20 +138,20 @@ public class GameManager : MonoBehaviour
 	{
 
         GameDataManager.Instance.Load();
-        if (GameDataManager.Instance.gameData.GameCurrentData.startState)						    //如果需要开启开始界面
-		{
+  //      if (GameDataManager.Instance.gameData.GameCurrentData.startState)						    //如果需要开启开始界面
+		//{
             CloseUsualBtn();													                    //关闭常用按钮
                 startSceneController.enabled = true;			                                        //开启开始界面函数
 
             SetVolume(0, GameDataManager.Instance.gameData.GameCurrentData.BGMVolume);          //设置当前音量情况
             SetVolume(1, GameDataManager.Instance.gameData.GameCurrentData.SoundVolume);
-        }
-        else 																	//不需要开启开始界面
-		{
-            ReadData();//读取存档中的数据
+        //}
+  //      else 																	//不需要开启开始界面
+		//{
+  //          ReadData();//读取存档中的数据
 
-            m_sceneNameInfoState = 1;											//播放场景名称提示条
-        }
+  //          m_sceneNameInfoState = 1;											//播放场景名称提示条
+  //      }
 	}
 
     public  void ReadData() {
