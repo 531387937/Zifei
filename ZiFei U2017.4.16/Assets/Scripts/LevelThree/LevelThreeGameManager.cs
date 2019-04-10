@@ -489,7 +489,7 @@ public class LevelThreeGameManager : MonoBehaviour
         GameDataManager.Instance.gameData.GameCurrentData.equipedIndex = m_itemEquipIndex;
         GameDataManager.Instance.gameData.GameCurrentData.BGMVolume = m_volume[0];      //记录当前音量情况
         GameDataManager.Instance.gameData.GameCurrentData.SoundVolume = m_volume[1];
-        //GameDataManager.Instance.Save();                                    //存档
+        GameDataManager.Instance.Save();                                    //存档
 
 
 
