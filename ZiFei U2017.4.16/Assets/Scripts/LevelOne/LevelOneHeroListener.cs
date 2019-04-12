@@ -37,6 +37,7 @@ public class LevelOneHeroListener : MonoBehaviour
 	
 	void Start()
 	{
+        m_colliderObj = GameObject.FindGameObjectsWithTag("PlatformBottom");
 		m_heroAnimator = this.GetComponent<Animator> ();				//获取主角的动画组件
 	}
 	

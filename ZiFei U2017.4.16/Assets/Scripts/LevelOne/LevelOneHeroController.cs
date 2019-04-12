@@ -70,7 +70,10 @@ public class LevelOneHeroController : MonoBehaviour
 
 
     }
-
+    private void Start()
+    {
+        m_mapCollider = GameObject.FindGameObjectsWithTag("climbCollider");
+    }
     private void Update()
     {
         if (LevelOneGameManager.Instance.isPlatformType_Mobild) return;
